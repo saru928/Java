@@ -167,7 +167,220 @@ public class 練習 {
 			}
 		}
 		
+		int f1 = 1;
+		switch(f1) {
+			case 0:
+				System.out.println("f1は0に等しい");
+				break;
+			case 1:
+				System.out.println("f1は1に等しい");
+				break;
+		}
+		int f2 = 5;
+		switch(f2) {
+			case 0:
+				System.out.println("f2は0に等しい");
+				break;
+			case 1:
+				System.out.println("f2は1に等しい");
+				break;
+			default:
+				System.out.println("f2は0でも1でもない");
+		}
+		String f3 = "赤";
+		switch(f3) {
+			case "赤":
+				System.out.println("赤組です");
+				break;
+			case "白":
+				System.out.println("白組です");
+				break;
+		}
+		String f4 = "青";
+		switch(f4) {
+			case "赤":
+				System.out.println("赤組です");
+				break;
+			case "白":
+				System.out.println("白組です");
+				break;
+			default:
+				System.out.println("エラーです");
+		}
 		
+		String[] name = new String[3];
+		name[0] = "田中";
+		name[1] = "高橋";
+		name[2] = "斉藤";
+		System.out.println(name[0]);
+		
+		String[] name1 = {"田中","高橋","斉藤"};
+		System.out.println(name1[0]);
+		
+		char[] g1 = {'x','y','z'};
+		System.out.println(g1[0]);
+		
+		char[] g2 = {'x','y','z'};
+		System.out.println(g2[1]);
+		
+		String[] name2 = {"田中","高橋","斉藤"};
+		name2[0] = "加藤";
+		System.out.println(name2[0]);
+		
+		String[][] country = {
+			{"日本","タイ"},
+			{"アメリカ","ブラジル"},
+			{"フランス","ロシア"}
+		};
+		System.out.println(country[0][0]);
+		System.out.println(country[0][1]);
+		System.out.println(country[1][0]);
+		System.out.println(country[2][1]);
+		
+		String[][]country1 = new String[3][2];
+		country1[0][0] = "日本";
+		country1[0][1] = "タイ";
+		country1[1][0] = "アメリカ";
+		country1[1][1] = "ブラジル";
+		country1[2][0] = "フランス";
+		country1[2][1] = "ロシア";
+		System.out.println(country[0][0]);
+		
+		
+		for(int h1 = 0; h1 < 3; h1++) {
+			System.out.println(h1);
+		}
+		for(int h2 = 1; h2 < 10; h2++) {
+			System.out.println(h2);
+		}
+		for(int h3 = 3; h3 < 10; h3++) {
+			System.out.println(h3);
+		}
+		for(int h4 = 3; h4 <= 10; h4++) {
+			System.out.println(h4);
+		}
+		for(int h5 = 10; h5 > 5; h5--) {
+			System.out.println(h5);
+		}
+		for(int h6 = 10; h6 >= 5; h6--) {
+			System.out.println(h6);
+		}
+		for(int h7 = 1; h7 < 10; h7 += 2) {
+			System.out.println(h7);
+		}
+		for(int h8 = 1; h8 < 10; h8 += 3) {
+			System.out.println(h8);
+		}
+		for(int h9 = 10; h9 > 1; h9 -= 2) {
+			System.out.println(h9);
+		}
+		for(int h10 = 10; h10 > 1; h10 -= 3) {
+			System.out.println(h10);
+		}
+		for(int star = 1; star <= 5; star ++) {
+			System.out.println("★");
+		}
+		
+		for(int i1 = 1; i1 <= 10; i1++) {
+			if(i1 % 2 == 0) {
+				System.out.println(i1);
+			}
+		}
+		for(int i2 = 0; i2 < 3; i2 ++) {
+			for(int i3 = 1; i3 < 4; i3 ++) {
+				System.out.println(i3);
+			}
+		}
+		int i4 = 10;
+		String i5 = i4 >= 0?"プラス":"マイナス";
+		System.out.println(i5);
+		
+		int i6 = 2;
+		String i7 = i6 % 2 == 0?"偶数":"奇数";
+		System.out.println(i7);
+		
+		for(int i8 = 0; i8 <= 5; i8 ++) {
+			String i9 = i8 % 2 == 0?"⭐︎":"★";
+			System.out.println(i9);
+		}
+		
+		int j1 = 1;
+		while(j1 <= 5) {
+			System.out.println(j1);
+			j1 ++;
+		}
+		int j2 = 5;
+		while(j2 < 10) {
+			System.out.println(j2);
+			j2 ++;
+		}
+		int j3 = 5;
+		while(j3 > 0) {
+			System.out.println(j3);
+			j3 --;
+		}
+		int j4 = 10;
+		while(j4 >= 5) {
+			System.out.println(j4);
+			j4 --;
+		}
+		int j5 = 1;
+		while(j5 <= 10) {
+			System.out.println(j5);
+			j5 += 2;
+		}
+		int j6 = 1;
+		while(j6 <= 10) {
+			System.out.println(j6);
+			j6 += 3;
+		}
+		int j7 = 10;
+		while(j7 >= 1) {
+			System.out.println(j7);
+			j7 -= 2;
+		}
+		int j8 = 10;
+		while(j8 >= 1) {
+			System.out.println(j8);
+			j8 -= 3;
+		}
+		int star1 = 1;
+		while(star1 <= 5) {
+			System.out.println("★");
+			star1 ++ ;
+		}
+		
+		int k1  = 0;
+		do {
+			System.out.println(k1);
+			k1 ++ ;
+		}while(k1 < 10);
+		
+		int k2 = 5;
+		do {
+			System.out.println(k2);
+			k2 ++ ;
+		}while(k2 < 10);
+		
+		int k3 = 5;
+		do {
+			System.out.println(k3);
+			k3 -- ;
+		}while(k3 > 0);
+		
+		int k4 = 1;
+		do {
+			System.out.println(k4);
+			k4 += 2;
+		}while(k4 <= 10);
+		
+		int k5 = 10;
+		do {
+			System.out.println(k5);
+			k5 -= 3;
+		}while(k5 >= 1);
+		
+	
 
 	}
 
