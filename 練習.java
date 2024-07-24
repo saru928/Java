@@ -380,8 +380,26 @@ public class 練習 {
 			k5 -= 3;
 		}while(k5 >= 1);
 		
-	
-
+		int mikan = (int)(300 * 1.08) + 350;
+		System.out.println(mikan);
+		
+		System.out.println(totalprice(300));
+		System.out.println(totalprice(450, 1.10));
+		System.out.println(totalprice(400, 1.08, 200));
+		System.out.println(totalprice(350));
+		
+		
 	}
-
+	
+	public static int totalprice(int fruitprice, double tax, int haiso) {
+		return (int)(fruitprice * tax) + haiso;
+	}
+	public static int totalprice(int fruitprice, double tax) {
+		return totalprice(fruitprice, tax, 350);
+	}
+	public static int totalprice(int fruitprice) {
+		return totalprice(fruitprice, 1.08);
+	}
+	
 }
+
